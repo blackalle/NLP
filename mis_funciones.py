@@ -5,7 +5,7 @@ wpt = WordPunctTokenizer()
 stop_words = set(stopwords.words('spanish'))
 
 def normalize_document(doc):
-    doc = doc.replace("!", "").replace("¡", "").replace(",", "").replace(".", "")
+    doc = doc.replace("!", "").replace("¡", "").replace(",", "").replace(".", "").replace(";", "")
     doc = doc.lower()
     doc = doc.strip()
     # tokenize document
